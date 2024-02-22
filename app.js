@@ -8,7 +8,7 @@ function getElement(selection) {
   );
 }
 
-
+ 
 function Gallery(element) {
 
 }
