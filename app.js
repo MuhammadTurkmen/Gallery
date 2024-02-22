@@ -11,6 +11,6 @@ function getElement(selection) {
   
 function Gallery(element) {
 
-}
+} 
 
 const neture = new Gallery(getElement('.nature')) 
