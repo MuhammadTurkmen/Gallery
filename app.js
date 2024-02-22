@@ -13,4 +13,4 @@ function Gallery(element) {
 
 }
 
-const  
+const   
