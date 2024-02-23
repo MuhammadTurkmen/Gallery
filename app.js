@@ -25,12 +25,13 @@ function Gallery(element) {
   // this.openModal = this.openModal.bind(this)
   // container event
   this.container.addEventListener('click', function(e) {
+    if(e.target.classList.contains())
     this.openModal()
   }.bind(this))
 
 } 
 
-Gallery.prototype.openModal = function(selectiedImage) {
+Gallery.prototype.openModal = function(selectiedImage, list) {
   this.modal.classList.add('open')
 }
 
