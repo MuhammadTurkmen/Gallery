@@ -51,7 +51,9 @@ Gallery.prototype.setMainImage = function(selectiedImage) {
   this.imageName.textContent = selectiedImage.title 
 }
 
-Gallery.prototype.closeModal = 
+Gallery.prototype.closeModal = function() {
+  this.modal.classList.remove()
+}
 
 const neture = new Gallery(getElement('.nature')) 
 const city = new Gallery(getElement('.city')) 
