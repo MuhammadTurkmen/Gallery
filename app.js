@@ -51,5 +51,7 @@ Gallery.prototype.setMainImage = function(selectiedImage) {
   this.imageName.textContent = selectiedImage.title 
 }
 
+Gallery.prototype.closeModal = 
+
 const neture = new Gallery(getElement('.nature')) 
 const city = new Gallery(getElement('.city')) 
