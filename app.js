@@ -21,7 +21,7 @@ function Gallery(element) {
   this.prevBtn = getElement('.prev-btn')
   // bind functions 
   this.openModal = this.openModal.bind(this)
-  this.container.addEventListener('click', )
+  this.container.addEventListener('click', this.openModal )
 
 } 
 
