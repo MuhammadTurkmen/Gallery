@@ -30,7 +30,7 @@ function Gallery(element) {
 
 } 
 
-Gallery.prototype.openModal = function() {
+Gallery.prototype.openModal = function(selectiedImage) {
   this.modal.classList.add('open')
 }
 
