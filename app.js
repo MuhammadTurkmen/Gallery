@@ -25,5 +25,7 @@ function Gallery(element) {
 
 } 
 
+Gallery.prototype.openModal()
+
 const neture = new Gallery(getElement('.nature')) 
 const city = new Gallery(getElement('.city')) 
