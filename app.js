@@ -13,6 +13,7 @@ function Gallery(element) {
   this.element = [...element.querySelectorAll('.img')]
   // target
   this.modal = getElement('.modal')
+  this.modalImg = getElement('.main-img')
 } 
 
 const neture = new Gallery(getElement('.nature')) 
