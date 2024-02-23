@@ -11,6 +11,8 @@ function getElement(selection) {
   
 function Gallery(element) {
   this.element = [...element.querySelectorAll('.img')]
+  // target
+  
 } 
 
 const neture = new Gallery(getElement('.nature')) 
