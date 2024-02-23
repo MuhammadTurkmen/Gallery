@@ -20,7 +20,8 @@ function Gallery(element) {
   this.nextBtn = getElement('.next-btn')
   this.prevBtn = getElement('.prev-btn')
   // bind functions 
-  this.openModal = this.openModal.bind(this)
+  // this.openModal = this.openModal.bind(this)
+  // container event
   this.container.addEventListener('click', function(e) {
     this.openModal()
   }.bind(this))
