@@ -38,7 +38,7 @@ Gallery.prototype.openModal = function(selectiedImage, list) {
 }
 
 Gallery.prototype.setMainImage = function(selectiedImage) {
-  
+  this.modalImg.src = 
 }
 
 const neture = new Gallery(getElement('.nature')) 
