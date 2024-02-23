@@ -15,6 +15,7 @@ function Gallery(element) {
   // target
   this.modal = getElement('.modal')
   this.modalImg = getElement('.main-img')
+  this.imageName = getElement('.image-name')
   this.modalImages = getElement('.modal-images')
   this.closeBtn = getElement('.close-btn')
   this.nextBtn = getElement('.next-btn')
