@@ -14,7 +14,7 @@ function Gallery(element) {
   // target
   this.modal = getElement('.modal')
   this.modalImg = getElement('.main-img')
-  this.modalImages = getElement
+  this.modalImages = getElement('.modal-images')
 } 
 
 const neture = new Gallery(getElement('.nature')) 
