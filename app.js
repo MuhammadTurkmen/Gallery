@@ -34,6 +34,7 @@ function Gallery(element) {
 } 
 
 Gallery.prototype.openModal = function(selectiedImage, list) {
+  this.setMainImage(selectiedImage)
   this.modal.classList.add('open')
 }
 
