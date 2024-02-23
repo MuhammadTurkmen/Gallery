@@ -26,7 +26,7 @@ function Gallery(element) {
 } 
 
 Gallery.prototype.openModal = function() {
-  this.modal.classList.add()
+  this.modal.classList.add('open')
 }
 
 const neture = new Gallery(getElement('.nature')) 
