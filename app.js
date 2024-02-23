@@ -55,5 +55,9 @@ Gallery.prototype.closeModal = function() {
   this.modal.classList.remove('open')
 }
 
+Gallery.prototype.nexImage = function() {
+  
+}
+
 const neture = new Gallery(getElement('.nature')) 
 const city = new Gallery(getElement('.city')) 
