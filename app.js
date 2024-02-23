@@ -52,7 +52,7 @@ Gallery.prototype.setMainImage = function(selectiedImage) {
 }
 
 Gallery.prototype.closeModal = function() {
-  this.modal.classList.remove()
+  this.modal.classList.remove('open')
 }
 
 const neture = new Gallery(getElement('.nature')) 
