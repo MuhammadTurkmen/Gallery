@@ -19,7 +19,8 @@ function Gallery(element) {
   this.closeBtn = getElement('.close-btn')
   this.nextBtn = getElement('.next-btn')
   this.prevBtn = getElement('.prev-btn')
-  let self = this 
+  // self refrence
+  // let self = this 
   // bind functions 
   // this.openModal = this.openModal.bind(this)
   // container event
