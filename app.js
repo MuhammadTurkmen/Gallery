@@ -56,6 +56,10 @@ Gallery.prototype.closeModal = function() {
 }
 
 Gallery.prototype.nexImage = function() {
+
+}
+
+Gallery.prototype.nexImage = function() {
   
 }
 
