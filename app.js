@@ -36,5 +36,7 @@ Gallery.prototype.openModal = function(selectiedImage, list) {
   this.modal.classList.add('open')
 }
 
+Gallery.prototype.setMainImage = 
+
 const neture = new Gallery(getElement('.nature')) 
 const city = new Gallery(getElement('.city')) 
