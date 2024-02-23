@@ -26,9 +26,8 @@ function Gallery(element) {
   // container event
   this.container.addEventListener('click', function(e) {
     if(e.target.classList.contains('img')) {
-      
+      this.openModal(e.target, this.list)
     }
-    this.openModal()
   }.bind(this))
 
 } 
