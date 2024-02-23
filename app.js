@@ -15,6 +15,7 @@ function Gallery(element) {
   this.modal = getElement('.modal')
   this.modalImg = getElement('.main-img')
   this.modalImages = getElement('.modal-images')
+  this.closeBtn = getElement('.close-btn')
 } 
 
 const neture = new Gallery(getElement('.nature')) 
