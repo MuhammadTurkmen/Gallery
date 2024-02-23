@@ -14,4 +14,4 @@ function Gallery(element) {
 } 
 
 const neture = new Gallery(getElement('.nature')) 
-const neture = new Gallery(getElement('.nature')) 
+const city = new Gallery(getElement('.city')) 
