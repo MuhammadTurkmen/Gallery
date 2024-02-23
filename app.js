@@ -20,13 +20,13 @@ function Gallery(element) {
   this.nextBtn = getElement('.next-btn')
   this.prevBtn = getElement('.prev-btn')
   // bind functions 
-
+  this.openModal = this.openModal
   this.container.addEventListener('click', )
 
 } 
 
 Gallery.prototype.openModal = function() {
-  
+
 }
 
 const neture = new Gallery(getElement('.nature')) 
