@@ -19,6 +19,10 @@ function Gallery(element) {
   this.closeBtn = getElement('.close-btn')
   this.nextBtn = getElement('.next-btn')
   this.prevBtn = getElement('.prev-btn')
+  // bind functions 
+
+
+
 } 
 
 const neture = new Gallery(getElement('.nature')) 
