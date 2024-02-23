@@ -22,9 +22,8 @@ function Gallery(element) {
   // bind functions 
   this.openModal = this.openModal.bind(this)
   this.container.addEventListener('click', function(e) {
-
-  }
-  this.openModal )
+    this.openModal
+  })
 
 } 
 
