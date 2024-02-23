@@ -40,7 +40,7 @@ Gallery.prototype.openModal = function(selectiedImage, list) {
     src="${image.src}" 
     title="${image.title}" 
     data-id="${image.dataset.id}"
-    class="${selectiedImage.dataset.id === image.dataset.id? "modal-img selected"}"
+    class="${selectiedImage.dataset.id === image.dataset.id? "modal-img selected" : "main-img"}"
     />`
   }).join('')
   this.modal.classList.add('open')
