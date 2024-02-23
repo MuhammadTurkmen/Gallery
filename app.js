@@ -10,6 +10,7 @@ function getElement(selection) {
   
   
 function Gallery(element) {
+  this.container = element
   this.element = [...element.querySelectorAll('.img')]
   // target
   this.modal = getElement('.modal')
