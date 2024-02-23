@@ -10,7 +10,7 @@ function getElement(selection) {
   
   
 function Gallery(element) {
-
+  this.element = element.querySelector
 } 
 
 const neture = new Gallery(getElement('.nature')) 
