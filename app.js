@@ -35,6 +35,7 @@ function Gallery(element) {
 
 Gallery.prototype.openModal = function(selectiedImage, list) {
   this.setMainImage(selectiedImage)
+  this.modalImages.innerHTML = list.map()
   this.modal.classList.add('open')
 }
 
