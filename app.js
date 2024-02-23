@@ -11,7 +11,7 @@ function getElement(selection) {
   
 function Gallery(element) {
   this.container = element
-  this.element = [...element.querySelectorAll('.img')]
+  this.list = [...element.querySelectorAll('.img')]
   // target
   this.modal = getElement('.modal')
   this.modalImg = getElement('.main-img')
@@ -40,7 +40,7 @@ Gallery.prototype.openModal = function(selectiedImage, list) {
     src="${image.src}" 
     title="${image.title}" 
     data-id="${image.dataset.id}"
-    class="${selectiedImage.dataset.id === image.dataset.id? "modal-img selected" : "modal-img"}"
+    class="${selectiedImage.dataset.id === image.dataset.id?"modal-img selected":"modal-img"}"
     />`
   }).join('')
   this.modal.classList.add('open')
