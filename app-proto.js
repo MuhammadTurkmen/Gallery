@@ -36,6 +36,24 @@ class Gallery {
         }.bind(this))
     }
 
+    openModal(selectiedImage, list) {
+        this.setMainImage(selectiedImage)
+        this.modalImages.innerHTML = list.map(function(image) {
+          return `<img 
+          src="${image.src}" 
+          title="${image.title}" 
+          data-id="${image.dataset.id}"
+          class="${selectiedImage.dataset.id === image.dataset.id?"modal-img selected":"modal-img"}"
+          />`
+        }).join('')
+        this.modal.classList.add('open')
+        this.closeBtn.addEventListener('click', this.closeModal)
+        this.nextBtn.addEventListener('click', this.nexImage)
+        this.prevBtn.addEventListener('click', this.prevImage)
+        this.modalImages.addEventListener('click', this.chooseImage)
+      
+    }
+
     setMainImage(selectiedImage) {
         this.modalImg.src = selectiedImage.src 
         this.imageName.textContent = selectiedImage.title 
@@ -47,7 +65,7 @@ class Gallery {
         this.nextBtn.removeEventListener('click', this.nexImage)
         this.prevBtn.removeEventListener('click', this.prevImage)
         this.modalImages.removeEventListener('click', this.chooseImage)
-      }
+    }
 }
 
 
