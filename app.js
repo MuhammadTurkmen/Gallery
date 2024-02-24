@@ -85,7 +85,7 @@ Gallery.prototype.prevImage = function() {
 }
 
 Gallery.prototype.chooseImage = function(e) {
-
+  if(e.target.classList.contains('modal-img'))
 }
 
 const neture = new Gallery(getElement('.nature')) 
