@@ -89,6 +89,7 @@ Gallery.prototype.chooseImage = function(e) {
     const selected = this.modalImages.querySelector('.selected')
     selected.classList.remove('selected')
     this.setMainImage(e.target)
+    e.target.classList.add('selected')
   }
 
 }
