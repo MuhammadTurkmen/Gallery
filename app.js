@@ -68,6 +68,7 @@ Gallery.prototype.nexImage = function() {
   const selected = this.modalImages.querySelector('.selected')
   const next = selected.nextElementSibling || this.modalImages.firstElementChild
   selected.classList.remove('selected')
+  next.classList.add('selected')
 }
 
 Gallery.prototype.prevImage = function() {
