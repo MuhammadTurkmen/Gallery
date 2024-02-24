@@ -66,7 +66,7 @@ Gallery.prototype.closeModal = function() {
 
 Gallery.prototype.nexImage = function() {
   const selected = this.modalImages.querySelector('.selected')
-  const next = selected.nextElementSibling
+  const next = selected.nextElementSibling || this.modalImages.firstElementChild
 }
 
 Gallery.prototype.prevImage = function() {
