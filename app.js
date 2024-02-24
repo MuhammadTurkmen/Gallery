@@ -45,8 +45,8 @@ Gallery.prototype.openModal = function(selectiedImage, list) {
   }).join('')
   this.modal.classList.add('open')
   this.closeBtn.addEventListener('click', this.closeModal)
-  this.nextBtn.addEventListener('click', this.closeModal)
-  this.prevBtn.addEventListener('click', this.closeModal)
+  this.nextBtn.addEventListener('click', this.nexImage)
+  this.prevBtn.addEventListener('click', this.prevImage)
 }
 
 Gallery.prototype.setMainImage = function(selectiedImage) {
@@ -62,7 +62,7 @@ Gallery.prototype.nexImage = function() {
 
 }
 
-Gallery.prototype.nexImage = function() {
+Gallery.prototype.prevImage = function() {
   
 }
 
