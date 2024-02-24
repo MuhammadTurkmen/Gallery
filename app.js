@@ -62,7 +62,7 @@ Gallery.prototype.closeModal = function() {
   this.closeBtn.removeEventListener('click', this.closeModal)
   this.nextBtn.removeEventListener('click', this.nexImage)
   this.prevBtn.removeEventListener('click', this.prevImage)
-  this.modalImages.removeEventListener('click', this.prevImage)
+  this.modalImages.removeEventListener('click', this.chooseImage)
 }
 
 Gallery.prototype.nexImage = function() {
@@ -81,7 +81,7 @@ Gallery.prototype.prevImage = function() {
   this.setMainImage(prev)
 }
 
-Gallery.prototype.selectImage = function(e) {
+Gallery.prototype.chooseImage = function(e) {
 
 }
 
