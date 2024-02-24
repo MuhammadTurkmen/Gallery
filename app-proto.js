@@ -81,7 +81,7 @@ class Gallery {
         selected.classList.remove('selected')
         prev.classList.add('selected')
         this.setMainImage(prev)
-      }
+    }
 
 }
 
