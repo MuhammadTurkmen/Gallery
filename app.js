@@ -50,6 +50,8 @@ Gallery.prototype.openModal = function(selectiedImage, list) {
   this.closeBtn.addEventListener('click', this.closeModal)
   this.nextBtn.addEventListener('click', this.nexImage)
   this.prevBtn.addEventListener('click', this.prevImage)
+  this.modalImages.addEventListener('click', this.chooseImage)
+
 }
 
 Gallery.prototype.setMainImage = function(selectiedImage) {
