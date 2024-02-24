@@ -39,8 +39,15 @@ class Gallery {
     setMainImage(selectiedImage) {
         this.modalImg.src = selectiedImage.src 
         this.imageName.textContent = selectiedImage.title 
-      }
+    }
 
+    closeModal() {
+        this.modal.classList.remove('open')
+        this.closeBtn.removeEventListener('click', this.closeModal)
+        this.nextBtn.removeEventListener('click', this.nexImage)
+        this.prevBtn.removeEventListener('click', this.prevImage)
+        this.modalImages.removeEventListener('click', this.chooseImage)
+      }
 }
 
 
