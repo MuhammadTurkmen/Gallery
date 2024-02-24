@@ -35,6 +35,12 @@ class Gallery {
           }
         }.bind(this))
     }
+
+    setMainImage(selectiedImage) {
+        this.modalImg.src = selectiedImage.src 
+        this.imageName.textContent = selectiedImage.title 
+      }
+
 }
 
 
