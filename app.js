@@ -61,7 +61,7 @@ Gallery.prototype.closeModal = function() {
   this.modal.classList.remove('open')
   this.closeBtn.removeEventListener('click', this.closeModal)
   this.nextBtn.removeEventListener('click', this.nexImage)
-  this.prevBtn.addEventListener('click', this.prevImage)
+  this.prevBtn.removeEventListener('click', this.prevImage)
 }
 
 Gallery.prototype.nexImage = function() {
