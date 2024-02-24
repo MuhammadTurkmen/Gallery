@@ -24,6 +24,7 @@ function Gallery(element) {
   // let self = this 
   // bind functions 
   // this.openModal = this.openModal.bind(this)
+  this.closeModal = this.closeModal.bind(this)
   // container event
   this.container.addEventListener('click', function(e) {
     if(e.target.classList.contains('img')) {
