@@ -87,6 +87,7 @@ Gallery.prototype.prevImage = function() {
 Gallery.prototype.chooseImage = function(e) {
   if(e.target.classList.contains('modal-img')) {
     const selected = this.modalImages.querySelector('.selected')
+    selected.classList.remove('selected')
     this.setMainImage(e.target)
   }
 
