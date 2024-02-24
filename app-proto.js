@@ -93,6 +93,6 @@ class Gallery {
     }
 
 
-
+}
 const neture = new Gallery(getElement('.nature')) 
 const city = new Gallery(getElement('.city')) 
