@@ -74,10 +74,10 @@ Gallery.prototype.nexImage = function() {
 
 Gallery.prototype.prevImage = function() {
   const selected = this.modalImages.querySelector('.selected')
-  const prev = selected.nextElementSibling || this.modalImages.firstElementChild
+  const prev = selected.previousElementSibling || this.modalImages.lastElementChild
   selected.classList.remove('selected')
-  next.classList.add('selected')
-  this.setMainImage(next)
+  prev.classList.add('selected')
+  this.setMainImage(prev)
 }
 
 const neture = new Gallery(getElement('.nature')) 
